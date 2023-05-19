@@ -31,9 +31,25 @@ nav{
     background-color: $complement;
     box-shadow: 5px 5px  #fff;
 }
-
-
-
 ul {
     list-style: none;
+}
+#search-box{
+    height: 90%;
+    background-color: $backgBackUp;      
+    display: flex;
+    border-radius: 50px;
+}  
+#search-box input {
+    background: none;
+    border: none;
+    color: $font-primary;
+    padding: 0.5rem;
+} 
+#search-box input:focus{
+    border-radius: 50px;
+    box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+}
+.nav-btn-hamb-container{
+    display: none;
 }

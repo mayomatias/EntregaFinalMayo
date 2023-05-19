@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../css/style.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import CartWidget from '../CartWidget/CartWidget';
@@ -9,20 +9,30 @@ let dropDowMenu = "nav-drop-menu-invisible"
 
 const NavBar = () =>{
   const [navBarState, setNavBarSatate] = useState(1)
+  const [btnHambStyle , setBtnHambStyle] = useState("")
+
+  let match = window.matchMedia("(min-width: 1200px)").matches 
+
+    useEffect(() =>{
+      if (match) {
+        setBtnHambStyle("nav-btn-hamb-container")
+      }
+    },)
+  
   const imprimir = () => {
-    console.log("Hola desde una funcion")
-    if(navBarState == 0) {
-      dropDowMenu = "nav-drop-menu-invisible"
-      setNavBarSatate(1);
-    } else {
-      dropDowMenu = "nav-drop-menu-visible"
-      setNavBarSatate(0);
-    }
+    console.log( match )
+    
+    
+      if(navBarState == 0) {
+        dropDowMenu = "nav-drop-menu-invisible";
+        setNavBarSatate(1);
+      } else {
+        dropDowMenu = "nav-drop-menu-visible";
+        setNavBarSatate(0);
+      }  
   }
   
   return( 
-  
-     
       <nav> 
         <div id='brand'>
           <h1>GammerShop</h1>
@@ -33,9 +43,10 @@ const NavBar = () =>{
             <li className="nav-item"><a>Nosotros</a></li>
             <li className="nav-item"><a>Ayuda</a></li>
           </ul>
-          <div>
+          <div className={btnHambStyle}>
             {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}
           </div>
+          
           <div id='search-box'>
             <input type='text' />
           </div>

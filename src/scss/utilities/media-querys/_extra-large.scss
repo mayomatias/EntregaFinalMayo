@@ -1,0 +1,18 @@
+
+@media (max-width: 1900px) {
+    
+    #nav-drop-menu{
+        flex-direction: row;
+    }
+    .btn-hamb-menu {
+        display: none;
+    }
+    
+    #nav-drop-down-container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+}
