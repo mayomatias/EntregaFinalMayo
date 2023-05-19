@@ -1,0 +1,39 @@
+@import "../utilities/variables";
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary;
+    color: antiquewhite;
+    width: 100%;
+}
+
+.nav-item{
+    padding: 0px 5px 3px;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 5px;
+    font-size: 1em;
+    background-color: aliceblue;
+    box-shadow: 5px 5px  $complement;
+    border: solid 2px $font-secondary;
+}
+.nav-item a{
+    color: #000;
+}
+.nav-item a:hover {
+    color: #fff;
+}
+
+.nav-item:hover{
+    color: #fff;
+    background-color: $complement;
+    box-shadow: 5px 5px  #fff;
+}
+
+
+
+ul {
+    list-style: none;
+}

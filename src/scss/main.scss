@@ -1,0 +1,22 @@
+//Utilities
+@import "./utilities/reset";
+@import "./utilities/variables";
+
+//Base
+@import "./base/typography";
+
+
+//==========> Media queries
+@import "./utilities/media-querys/large";
+@import "./utilities/media-querys/medium";
+@import "./utilities/media-querys/mobile";
+
+
+//Components
+@import "./components/navbar";
+
+//Layout
+@import "./layout/body.scss";
+
+
+

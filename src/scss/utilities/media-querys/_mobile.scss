@@ -1,0 +1,80 @@
+@import "../../utilities/variables";
+
+@media (max-width: 576px) {
+    
+    nav {
+        flex-direction: column;
+
+    }
+    #brand{
+        margin: 0.5rem;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        z-index: 2;
+    }
+    #nav-drop-down-container{
+        display: flex;
+        width: 95%;
+        height: 95%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.3rem;
+    }
+    #nav-drop-menu{
+        z-index: 1;
+        margin-left: 0;
+        background-color: aliceblue;
+        margin-top: 30vw;
+        width: 75%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        flex-direction: column;
+        align-items: stretch;
+        
+    }
+    #nav-drop-menu ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    
+    #nav-drop-menu li {
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search-box{
+        height: 90%;
+        background-color: $backgBackUp;      
+        display: flex;
+        border-radius: 50px;
+        
+    }  
+    #search-box input {
+        background: none;
+        border: none;
+        color: $font-primary;
+        padding: 0.5rem;
+    } 
+    #search-box input:focus{
+        border-radius: 50px;
+        box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    }
+    .nav-drop-menu-invisible{
+        display: none;
+    }
+    .nav-drop-menu-visible{
+        display: flex;
+    }
+    
+    .nav-item a:hover{
+        color: #fff;
+    } 
+}
