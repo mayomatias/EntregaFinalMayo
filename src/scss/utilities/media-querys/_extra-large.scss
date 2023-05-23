@@ -1,18 +1,65 @@
 
-@media (max-width: 1900px) {
-    
-    #nav-drop-menu{
+@media only screen and (min-width: 992px) {
+    nav {
+        display: flex;
         flex-direction: row;
+        height: 5vw;
     }
-    .btn-hamb-menu {
-        display: none;
-    }
-    
-    #nav-drop-down-container{
-        width: 80%;
+    #brand{
+        margin: 0.5rem;
+        width: auto;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        z-index: 2;
+    }
+    #nav-drop-down-container{
+        display: flex;
+        width: auto;
+        height: 95%;
+        justify-content: center ;
+        align-items: center;
+        padding: 0.3rem;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    #nav-drop-menu{
+        z-index: 0;
+        margin-left: 0;
+        background-color: #ffffff00;
+        margin-top: 0px;
+        width: auto;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        flex-direction: row;
+        align-items: stretch;
+        
+    }
+    #nav-drop-menu ul{
+        display: flex;
         justify-content: center;
+        align-items: center;
+    }
+    
+    #nav-drop-menu li {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
    
+  
+    .nav-drop-menu-invisible{
+        display: flex;
+    }
+    .nav-drop-menu-visible{
+        display: flex;
+    }
+
+    .nav-item a:hover{
+        color: #fff;
+    } 
 }

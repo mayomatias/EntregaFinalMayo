@@ -1,6 +1,6 @@
 @import "../../utilities/variables";
 
-@media (max-width: 1200px) {
+@media only screen and (min-width: 600px) {
     nav {
         flex-direction: column;
     }

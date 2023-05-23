@@ -14,10 +14,12 @@ const NavBar = () =>{
   let match = window.matchMedia("(min-width: 1200px)").matches 
 
     useEffect(() =>{
+      const handleResize = () => changeDeviceSize(window.innerWidth);
+      window.addEventListener('resize', handleResize);
       if (match) {
         setBtnHambStyle("nav-btn-hamb-container")
       }
-    },)
+    },[])
   
   const imprimir = () => {
     console.log( match )
@@ -48,7 +50,8 @@ const NavBar = () =>{
           </div>
           
           <div id='search-box'>
-            <input type='text' />
+            <input type="text" placeholder="Buscar..."/>
+            <button type="submit">Search</button>
           </div>
           <CartWidget />
         </div>

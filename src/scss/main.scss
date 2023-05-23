@@ -6,10 +6,6 @@
 @import "./base/typography";
 
 
-//==========> Media queries
-@import "./utilities/media-querys/_extra-large";
-@import "./utilities/media-querys/large";
-@import "./utilities/media-querys/mobile";
 
 
 //Components
@@ -18,5 +14,9 @@
 //Layout
 @import "./layout/body.scss";
 
+//==========> Media queries
+@import "./utilities/media-querys/large";
+@import "./utilities/media-querys/_extra-large";
+@import "./utilities/media-querys/mobile";
 
 
