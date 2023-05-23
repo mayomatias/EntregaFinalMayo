@@ -26,7 +26,7 @@
         margin-left: 0;
         background-color: aliceblue;
         margin-top: 86px;
-        width: 75%;
+        width: 45%;
         position: fixed;
         top: 0%;
         left: 0%;
@@ -39,8 +39,6 @@
         justify-content: center;
         align-items: center;
     }
-        
-    
     #nav-drop-menu li {
         height: 10vw;
         width: 100%;
@@ -48,15 +46,12 @@
         justify-content: center;
         align-items: center;
     }
-   
-  
     .nav-drop-menu-invisible{
         display: none;
     }
     .nav-drop-menu-visible{
         display: flex;
     }
-
     .nav-item a:hover{
         color: #fff;
     } 
