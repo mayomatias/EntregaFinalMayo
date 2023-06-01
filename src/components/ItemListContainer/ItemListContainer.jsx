@@ -1,13 +1,12 @@
 import React from "react";
-import ItemCount from "../ItemCount/ItemCount";
+import ItemList from "./ItemList/ItemList";
 
-const ItemListContainer = ({greetting}) => {
-    return(
-        <>
-            <h2 style={{marginTop:'1rem', textAlign:'center'}}>{greetting}</h2>
-            <ItemCount />
-        </>
+const ItemListContainer = () => {
+
+    return (
+        <ItemList />
     )
+
 }
 
 export default ItemListContainer;
