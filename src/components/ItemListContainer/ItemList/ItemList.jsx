@@ -10,7 +10,7 @@ const ItemList = ({ items }) => {
   console.log(data);
     if(loading) return <CircularProgress />
     return(
-        <div className="Cards-List">
+        <div className="items-list">
         {data &&
             data.map((data) => {
                 return (
