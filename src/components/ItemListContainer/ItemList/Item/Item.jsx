@@ -4,21 +4,15 @@ import ItemCount from "./ItemCount/ItemCount";
 
 const Item = ({ item }) => {
 
-    const [itemObj, setItemObj] = useState({
-        id: 1,
-        title: "Pan",
-        price: 5500,
-        pictureUrl: "http://dsadad"
-    })
 
     return (
         <>
-            <h2>Titulo del prod</h2>
-            <img src=""/>
-            <p>Descripcion</p>
+            <h2>{item.title}</h2>
+            <img src={item.pictureUrl}/>
+            <p>Price: {item.price}</p>
             <ItemCount 
-                stock={20}
-                initial={10}
+                stock={item.rating.count}
+                initial={0}
             />
         </>
     )
