@@ -6,15 +6,15 @@ const Item = ({ item }) => {
 
 
     return (
-        <>
+        <div className="item-card">
             <h2>{item.title}</h2>
-            <img src={item.pictureUrl}/>
+            <img src={item.image}/>
             <p>Price: {item.price}</p>
             <ItemCount 
                 stock={item.rating.count}
                 initial={0}
             />
-        </>
+        </div>
     )
 
 }
