@@ -23,9 +23,6 @@ const NavBar = () =>{
     },[])
   
   const imprimir = () => {
-    console.log( match )
-    
-    
       if(navBarState == 0) {
         dropDowMenu = "nav-drop-menu-invisible";
         setNavBarSatate(1);
@@ -38,13 +35,13 @@ const NavBar = () =>{
   return( 
       <nav> 
         <div id='brand'>
-          <Link to="/"><h1>GammerShop</h1></Link>
+          <Link className='brand-link' to="/"><h1>GammerShop</h1></Link>
         </div>
         <div id='nav-drop-down-container'>
           <ul className={dropDowMenu} id='nav-drop-menu'>
-            <Link to="/" className="nav-item">Productos</Link>
-            <Link to="/nosotros" className="nav-item">Nosotros</Link>
-            <Link to="/ayuda" className="nav-item">Ayuda</Link>
+            <Link onClick={imprimir} to="/" className="nav-item">Productos</Link>
+            <Link onClick={imprimir} to="/nosotros" className="nav-item">Nosotros</Link>
+            <Link onClick={imprimir} to="/ayuda" className="nav-item">Ayuda</Link>
           </ul>
           <div className={btnHambStyle}>
             {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}

@@ -6,10 +6,10 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 
+
 const ItemList = ({ items }) => {
   const { data, loading } = useAxios('https://fakestoreapi.com/products/category/electronics');
-  console.log(data);
-    if(loading) return <CircularProgress />
+    if(loading) return <div className="center"> <CircularProgress /> </div>
     return(
         <div className="items-list">
         {data &&

@@ -23,9 +23,9 @@ const ItemCount = ({ stock, initial }) => {
     return (
         <>
             <div className='item-count'>
-                <button onClick={onAdd}>+</button>
+                <button onClick={onSub}>-</button>
                 <p>{cant}</p>
-                <button onClick={onSub}>-</button>    
+                <button onClick={onAdd}>+</button>    
             </div>
             <div className='item-count-controller'>
                 <p>Unidades disponibles: {stock}</p>

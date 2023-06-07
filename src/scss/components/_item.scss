@@ -8,16 +8,22 @@
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
     height: 500px;
 }
-.item-card-title-container{
-    background-color: aqua;
-}
+
 .card-img-container{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
+
+.center {
+    height: 100%;
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .item-card img {
     border-radius: 7px;
     height: 100%;
@@ -31,5 +37,11 @@
 
 
 .item-count{
+    margin-right: auto;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+.item-count button{
+    width: 33%;
 }
