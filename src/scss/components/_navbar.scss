@@ -8,6 +8,10 @@ nav{
     color: antiquewhite;
     width: 100%;
 }
+.brand-link{
+    color: #fff;
+    text-decoration: none;
+}
 .nav-item{
     padding: 0px 5px 3px;
     height: fit-content;
@@ -17,12 +21,12 @@ nav{
     background-color: aliceblue;
     box-shadow: 5px 5px  $complement;
     border: solid 2px $font-secondary;
-}
-.nav-item a{
     color: #000;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
+    text-decoration: none;
 }
+
 .nav-item a:hover {
     color: #fff;
 }

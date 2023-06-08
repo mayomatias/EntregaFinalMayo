@@ -19,6 +19,10 @@ nav {
   color: antiquewhite;
   width: 100%; }
 
+.brand-link {
+  color: #fff;
+  text-decoration: none; }
+
 .nav-item {
   padding: 0px 5px 3px;
   height: fit-content;
@@ -27,12 +31,11 @@ nav {
   font-size: 1em;
   background-color: aliceblue;
   box-shadow: 5px 5px #4717F6;
-  border: solid 2px black; }
-
-.nav-item a {
+  border: solid 2px black;
   color: #000;
   width: -webkit-fill-available;
-  height: -webkit-fill-available; }
+  height: -webkit-fill-available;
+  text-decoration: none; }
 
 .nav-item a:hover {
   color: #fff; }
@@ -92,8 +95,45 @@ button[type="submit"]:hover {
   box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
   outline: none; }
 
+.item-card {
+  width: 320px;
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  margin: 10px auto;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+  height: 500px; }
+
+.card-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.center {
+  height: 100%;
+  margin-top: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 .item-card img {
-  width: 100px; }
+  border-radius: 7px;
+  height: 100%;
+  max-height: 284px;
+  min-height: 284px;
+  object-fit: contain;
+  max-width: 250px; }
+
+.item-count {
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.item-count button {
+  width: 33%; }
 
 body {
   background-color: #ababab;
@@ -146,6 +186,7 @@ body {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
+  /*---------------------NAV BAR--------------------------*/
   nav {
     display: flex;
     flex-direction: row;
@@ -195,7 +236,13 @@ body {
   .nav-item a:hover {
     color: #fff; }
   #search-box input[type="text"] {
-    font-size: large; } }
+    font-size: large; }
+  /*---------------------FIN NAV BAR--------------------------*/
+  /*---------------------ITEM CARD------------------*/
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
 
 @media only screen and (max-width: 600px) {
   nav {

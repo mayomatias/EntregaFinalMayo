@@ -1,5 +1,6 @@
 
 @media only screen and (min-width: 992px) {
+  /*---------------------NAV BAR--------------------------*/
     nav {
         display: flex;
         flex-direction: row;
@@ -65,4 +66,13 @@
     #search-box input[type="text"] {
         font-size: large;
     }
+    /*---------------------FIN NAV BAR--------------------------*/
+    
+    /*---------------------ITEM CARD------------------*/
+    .items-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 }

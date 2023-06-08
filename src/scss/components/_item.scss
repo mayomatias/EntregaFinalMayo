@@ -1,7 +1,47 @@
 .item-card {
-    
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    margin: 10px auto;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+    height: 500px;
+}
+
+.card-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.center {
+    height: 100%;
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .item-card img {
-    width: 100px;
+    border-radius: 7px;
+    height: 100%;
+    max-height: 284px;
+    min-height: 284px;
+    object-fit: contain;
+    max-width: 250px;
+
+}
+
+
+
+.item-count{
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item-count button{
+    width: 33%;
 }
