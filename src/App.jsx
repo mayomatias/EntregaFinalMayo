@@ -1,8 +1,8 @@
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import AboutPage from './views/AboutPage';
-import Ayuda from './views/Ayuda';
-import DetailPage from './views/DetailPage';
+import ItemListContainer from './views/ItemList/ItemListContainer';
+import AboutPage from './views/About/AboutPage';
+import Ayuda from './views/Help/Ayuda';
+import DetailPage from './views/Detail/DetailPage';
 
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 

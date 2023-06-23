@@ -10,17 +10,17 @@ const Item = ({ item }) => {
         <div className="item-card">
             <Link to={`/detail/${item.id}`}>
                 <div className='item-card-title-container'>
-                
+
                     <h2>{item.title}</h2>
-                
+
                 </div>
-                
+
                 <div className='card-img-container'>
-                    <img src={item.image}/>
+                    <img src={item.image} />
                 </div>
             </Link>
             <p>Price: {item.price}</p>
-            <ItemCount 
+            <ItemCount
                 stock={item.rating.count}
                 initial={0}
             />
