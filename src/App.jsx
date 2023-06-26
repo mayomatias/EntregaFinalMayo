@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './views/ItemList/ItemListContainer';
+import ItemListContainer from './views/Home/ItemListContainer';
 import AboutPage from './views/About/AboutPage';
 import Ayuda from './views/Help/Ayuda';
 import DetailPage from './views/Detail/DetailPage';

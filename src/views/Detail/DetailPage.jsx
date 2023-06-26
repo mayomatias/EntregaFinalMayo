@@ -14,8 +14,6 @@ function DetailPage() {
         })
         
     }, [])
-
-
     return (
         <div>
             <h2>Detail Page</h2>
