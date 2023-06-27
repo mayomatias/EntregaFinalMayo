@@ -39,9 +39,9 @@ const NavBar = () =>{
         </div>
         <div id='nav-drop-down-container'>
           <ul className={dropDowMenu} id='nav-drop-menu'>
-            <Link onClick={imprimir} to="/" className="nav-item">Productos</Link>
-            <Link onClick={imprimir} to="/nosotros" className="nav-item">Nosotros</Link>
-            <Link onClick={imprimir} to="/ayuda" className="nav-item">Ayuda</Link>
+            <li><Link onClick={imprimir} to="/" className="nav-item">Productos</Link></li>
+            <li><Link onClick={imprimir} to="/nosotros" className="nav-item">Nosotros</Link></li>
+            <li><Link onClick={imprimir} to="/ayuda" className="nav-item">Ayuda</Link></li>
           </ul>
           <div className={btnHambStyle}>
             {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}

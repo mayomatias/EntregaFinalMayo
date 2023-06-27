@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const CartWidget = () => {
   return(
     <div>
-      <a href="">
+      
       <Link to={'/cart'}>
         <ShoppingCartIcon sx={{ color: '#ffffff' }} />
       </Link>
         
-      </a>
+    
     </div>
   )
 }
