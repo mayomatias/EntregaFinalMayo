@@ -12,14 +12,21 @@ const NavBar = () =>{
   const [navBarState, setNavBarSatate] = useState(1)
   const [btnHambStyle , setBtnHambStyle] = useState("")
 
-  let match = window.matchMedia("(min-width: 1200px)").matches 
-
+  const changeDeviceSize = (windowWidth) => {
+    if (windowWidth >= 1200) {
+      setBtnHambStyle("nav-btn-hamb-container")
+    } else if (windowWidth >= 768) {
+      
+      console.log("Dispositivo mediano");
+    } else {
+    
+      console.log("Dispositivo pequeño");
+    }
+  }
     useEffect(() =>{
       const handleResize = () => changeDeviceSize(window.innerWidth);
-      window.addEventListener('resize', handleResize);
-      if (match) {
-        setBtnHambStyle("nav-btn-hamb-container")
-      }
+      window.addEventListener('load', handleResize);
+     
     },[])
   
   const imprimir = () => {
@@ -43,7 +50,7 @@ const NavBar = () =>{
             <li><Link onClick={imprimir} to="/nosotros" className="nav-item">Nosotros</Link></li>
             <li><Link onClick={imprimir} to="/ayuda" className="nav-item">Ayuda</Link></li>
           </ul>
-          <div className={btnHambStyle}>
+          <div className='nav-btn-hamb-container'>
             {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}
           </div>
           

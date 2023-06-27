@@ -59,7 +59,9 @@
     .nav-drop-menu-visible{
         display: flex;
     }
-
+    .nav-btn-hamb-container{
+        display: none;
+    }
     .nav-item a:hover{
         color: #fff;
     } 

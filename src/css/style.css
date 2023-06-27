@@ -61,9 +61,6 @@ ul {
   padding: 0.5rem;
   color: #000; }
 
-.nav-btn-hamb-container {
-  display: none; }
-
 button[type="submit"] {
   text-indent: -999px;
   overflow: hidden;
@@ -172,6 +169,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .nav-btn-hamb-container {
+    display: block; }
   #nav-drop-menu li {
     height: 5vw;
     width: 100%;
@@ -233,6 +232,8 @@ body {
     display: flex; }
   .nav-drop-menu-visible {
     display: flex; }
+  .nav-btn-hamb-container {
+    display: none; }
   .nav-item a:hover {
     color: #fff; }
   #search-box input[type="text"] {
