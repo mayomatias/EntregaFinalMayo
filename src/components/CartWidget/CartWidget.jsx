@@ -10,7 +10,6 @@ const CartWidget = () => {
         <ShoppingCartIcon sx={{ color: '#ffffff' }} />
       </Link>
         
-    
     </div>
   )
 }
