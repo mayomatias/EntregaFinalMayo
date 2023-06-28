@@ -12,7 +12,6 @@ const Item = ({ item }) => {
                 <div className='item-card-title-container'>
                 
                     <h2>{item.title}</h2>
-                
                 </div>
                 
                 <div className='card-img-container'>
