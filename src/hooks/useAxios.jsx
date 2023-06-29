@@ -9,6 +9,7 @@ const useAxios = (url) => {
      setLoading(true);
      axios(url).then((res) => {
         setData(res.data);
+        
         setTimeout(() => {
             setLoading(false);
         },1500)
