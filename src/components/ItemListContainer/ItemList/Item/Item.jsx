@@ -20,6 +20,7 @@ const Item = ({ item }) => {
             </Link>
             <p>Price: {item.price}</p>
             <ItemCount 
+                id={item.id}
                 stock={item.rating.count}
                 initial={0}
             />
